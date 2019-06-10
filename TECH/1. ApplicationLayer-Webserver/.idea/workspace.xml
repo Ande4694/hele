@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58da896c-12ee-40ae-bf9e-a48fcbdffaaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Handler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BubbleSort/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/Dijkstra.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/DijkstraController.java" afterDir="false" />
@@ -12,19 +13,11 @@
       <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/GraphService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/Vertex.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/resources/templates/dijkstra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Threads/src/com/company/DinningPhilo/DinningTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Threads/src/com/company/DinningPhilo/Philosopher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationLayer-Webserver.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ApplicationLayer-Webserver/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ApplicationLayer-Webserver/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ApplicationLayer-Webserver/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BubbleSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BubbleSort/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Decorator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Decorator/out/production/Decorator/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/out/production/Decorator/com/company/Main.class" afterDir="false" />
@@ -35,80 +28,15 @@
       <change beforePath="$PROJECT_DIR$/../MergeSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MergeSort/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Singleton/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Singleton/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Singleton/src/com/company/SingeltonThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Singleton/src/com/company/SingeltonThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/Threads.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/Chat/Chatter1/ChatServer$ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/Chat/Chatter1/ChatServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/Chat/Chatter2/ChatClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/Cons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/Prod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/RunThis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/Slider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris/Connector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/Connection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/MainAttack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$UPDATE_TYPE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/Stats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/MainLidtSkrald.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/MainSync.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/MainWaitNotify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/ThreadB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/join/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/join/Tun.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/Chat/Chatter1/ChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/Chat/Chatter2/ChatClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/Cons.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/Prod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/RunThis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/Slider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris/Connector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/Connection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/MainAttack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/SlowLoris.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/Stats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/WhyWeNeedSynch/MainLidtSkrald.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/WhyWeNeedSynch/MainSync.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/WhyWeNeedSynch/MainWaitNotify.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/join/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/join/Tun.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Webserver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Threads/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/join/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/join/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/join/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Threads/src/com/company/join/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Webserver" beforeDir="false" afterPath="$PROJECT_DIR$/../Webserver" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../counting sort" beforeDir="false" afterPath="$PROJECT_DIR$/../counting sort" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../devops" beforeDir="false" afterPath="$PROJECT_DIR$/../devops" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flyweight" beforeDir="false" afterPath="$PROJECT_DIR$/../flyweight" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/MultiClientChat.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/ChatServer$ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/ChatServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/Client1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/Client2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatClientTo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatServerTo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/single/ChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/single/Client1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatClientTo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatServerTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../multiClientChat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/single/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../multiClientChat/src/single/ChatServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,7 +46,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Handler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -150,7 +103,33 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ApplicationLayer-Webserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApplicationLayer-Webserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApplicationLayer-Webserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApplicationLayer-Webserver" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApplicationLayer-Webserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApplicationLayer-Webserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApplicationLayer-Webserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApplicationLayer-Webserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -158,7 +137,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560163363278" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3. Threads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -210,17 +189,18 @@
       <workItem from="1559030865317" duration="1467000" />
       <workItem from="1559990669590" duration="1398000" />
       <workItem from="1560163016977" duration="929000" />
-      <workItem from="1560181573977" duration="1961000" />
+      <workItem from="1560181573977" duration="1870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9366000" />
+    <option name="totallyTimeSpent" value="9275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -277,7 +257,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="561">
           <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
