@@ -1,0 +1,79 @@
+Introduktion
+
+Hvad er Network layer
+
+IP protocol
+
+
+IP datagram
+
+IP address
+
+
+
+
+Router 
+
+routing and forwarding
+
+Subnet 
+
+
+wireshark
+
+
+NetWork layer er den 3. del af OSI communications model, og dens
+primære funktion er at sende data til og igennem andre netværks.
+Dette gør den ved at tage segmenter fra transport layeret, og encapsulere
+hver segment til i packet, hvor derefter packets bliver sendt
+til den nærmeste router. når packets er noget den mål bliver segmente 
+taget og sent til transport layeret.
+
+De to mest vigtige funktioner network layeret har er FORWARDING og
+ROUTING, og derfor er det vigtigt at man skelne mellem de funktioner
+
+
+FORWARDING:
+
+Forwarding er når man sender en packets fra en router til en anden
+som er på vejen til packets denstenation 
+
+
+ROUTING:
+ Routing er hvor network layeret planlægger helle turen igennem routerne
+ fra afsender til modtager
+
+IPv4 DATAGRAM:
+
+
+
+
+BGP Border Gateway Protocol:
+Det er en Routing protocol, som er designet til at udveksle
+roter og rækkevidde informationer mellem AS på internettet-
+Målet med BGP er at hver AS reklamere med de roter den selv bruger,
+til dens naboer. Det er protokollen der samler helle internetet 
+ 
+- TCP mellem AS
+- AS hops, istedet for router hops
+- forhold, hastighed, kortest vej
+
+
+ROUTER:
+En Router er en nætværkenhed som er komplet til to eller flere netværk
+som køre et stykke software som tillader en router at sende data fra en
+netværk til et andet. En af routerns funktioner er at sender(FORWARDIN)
+en packets fra en router til en anden, det gør den ved at læse packets
+destenation adresse, og bruge så sit eget routing table til sende packets
+vider på den tur.
+
+WIRESHARK:
+SAMMENLIGN MED DATAGRAM
+
+Routing involves all of a network’s routers,
+whose collective interactions via routing protocols
+determine the paths that packets take on their trips
+from source to destination node
+
+Basically the network layer makes it possible to logically connect
+any two interneconnected hosts (computers) in the entire World.

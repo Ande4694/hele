@@ -1,0 +1,214 @@
+jenkins and java jdk 8
+____________________________
+
+sudo apt-get install language-pack-en
+sudo apt-get remove --auto-remove openjdk*
+sudo apt-get purge openjdk*
+sudo apt install openjdk-8-jdk
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update
+sudo apt install jenkins
+
+goto ec2 : 8080
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+Create key for connection to Github: (this is a requirement for a webhook)
+On Jenkins frontpage, select "Manage Jenkins"
+Select "Configure System"
+Scroll down to "GitHub" and select "Advanced…"
+Under "Additional Actions", select "Convert Login and Password to Token"
+Select the radio-button "From login and password"
+Enter your GitHub account credentials
+Click the button "Create token credentials"
+Now, still under "GitHub" section, click "Add GitHub Server"
+Give it a name (e.g. the same as your username at GitHub)
+Under "Credentials" select the “Auto Generated Token"
+Click "Test connection" This should display a string, indicating a successful connection.
+Click "Save" at the bottom of the page.
+Verify the connection on GitHub by visiting https://github.com/settings/tokens
+You still need to connect to a specific GitHub project. Do this in the next step.
+Tell Jenkins you have Maven
+In your AWS Ubuntu SSH terminal install or check maven
+
+
+$ sudo apt install maven
+$ ls /usr/share/mav*
+
+Now you should see some maven libraries
+In Jenkins dashboard, select Manage Jenkins, Global Tool Configuration
+Scroll down to Maven, and click Add Maven
+Uncheck the “Install Automatically” checkbox
+In textbox MAVEN_HOME enter:   /usr/share/maven   And give it a name in the Name textbox
+click Save
+
+in github add webhook
+http://ec2-3-122-251-1.eu-central-1.compute.amazonaws.com:8080/github-webhook/
+
+
+In Jenkins main page, select "New Item" 
+name it "myproject"
+select type Freestyle, and click ok
+Under "Source Code Management", select Git
+Copy your GitHub URL into "Repository URL" (since it is public, no credentials are needed :-)
+Under "Build Triggers" select "GitHub hook trigger for GITScm polling" and click save. (This will turn on the connection to GitHub, and you can see that a webhook has been created in GitHub > yourProject > Settings > Webhooks)
+If this DOES NOT create a webhook in your GitHub project, then follow this tutorial STEP 2 and 3
+In Jenkins Dashboard select your project
+Select “Configure”
+
+
+Scroll down to Build and select "Add build step"
+Select “Invoke top-level Maven targets”
+Select the Maven version, which you installed before
+Under "Goals" enter “clean package” and click Save 
+
+test by clicking build now
+
+add docker
+
+sudo apt-get remove docker docker-engine docker.io
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+ sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+sudo docker run hello-world
+
+sudo usermod -a -G docker jenkins
+sudo service jenkins restart
+
+In the Jenkins dashboard, select your project, and configure 
+add new build step of type execute shell, entering command “docker images”
+Click “Build Now” in the left menu, check result in console output
+
+In the AWS instance Ubuntu terminal, cd to this directory, and work from there: 
+/var/lib/jenkins/workspace/myProjectblaba
+
+Prepare a Dockerfile (by typing sudo nano Dockerfile)
+Name:   /var/lib/jenkins/workspace/myProjectblabla/Dockerfile 
+The Dockerfile should consist of 3 lines:
+FROM openjdk:latest
+COPY target/devops-0.0.1-SNAPSHOT.jar /usr/src/devops-0.0.1-SNAPSHOT.jar
+CMD java -jar /usr/src/devops-0.0.1-SNAPSHOT.jar
+
+sudo docker image build . -t devops
+
+sudo docker run -d -p 9090:9090/tcp --name devopscontainer devops
+
+Add build steps to Jenkins, using jenkins dashboard, selecting your project and configure
+Add  Build Step 2 (Docker)
+Click "Add build step" > Executable Shell  (in this part of the guide, # means comment)
+Under "Command" enter:
+docker kill devopscontainer  # Note that this will fail, if there is no container running.
+Add  Build Step 3 (similar to Step 2)
+docker rm devopscontainer
+Add  Build Step 4  
+docker rmi devops
+Add  Build Step 5
+docker image build . -t devops   # here dock6image is my particular image name
+Add  Build Step 6
+docker run -d -p 9090:9090/tcp --name devopscontainer devops
+Click “Save” to save the full Jenkins job.
+
+
+Test Jenkins full “continuous integration” by:
+change you source code in your programming tool (like intelliJ)
+commit and push to git
+now Jenkins should automatically: get the source, use maven to build the jar-file, and use docker to kill, remove image and container, build new image, and run new container (with the new code)
+Test it!!!!!
+
+Notice, that Jenkins will automatically create the project folder /var/lib/jenkins/workspace/myProject when the Job is run the first time. From then on, that will be the folder for the project.
+
+
+
+
+extras 
+
+
+
+
+
+
+
+Create and run container AND start a proces within it:
+$ docker run -ti image_name proces_name // -ti means Terminal Interactive, which links your terminal to the proces.
+										// -d means run in detached mode (background)
+										// --rm means the container will be removed after stopping it
+List all containers
+$ docker ps -a
+
+Kill a running container
+$ docker kill container_name
+
+Kill ALL running containers
+docker kill $(docker ps -q)
+
+Remove container:
+$ docker rm container_name //often generated randomly such as boring_beaver
+
+Remove ALL not-running containers
+docker rm $(docker ps -a -q)
+
+Attach to an already running container:
+$ docker attach container_name
+
+Exit a running container, but NOT stopping it:
+$ CTRL p CTRL q
+
+Create new image when a Dockerfile is present (at the same directory as terminal)
+$ docker image build . -t helloworld  // . is the path to current directory
+									  // -t is to add a tag to this image
+
+Create new image from container:
+$ docker commit container_id // get the id from: $ docker ps -a, or see it at the 	
+								container-console: root@519b8f2437fd:/#
+
+Remove image
+docker rmi image-name:tag
+
+Run new proces inside an already running container:
+$ docker exec -ti container_name bash // this launches a new bash, independent from the already running bash
+// exit by typing CTRL+d
+
+See logs of container (e.g. console output, error messages)
+$ docker logs container_name
+
+Docker Networking
+Terminal 1
+$ docker run -ti -p 45678:45678 -p 45679:45679/tcp ubuntu:14.04 bash // sets up 2 ports mapping. Format: OUTSIDE PORT # : INSIDE PORT # /protocol
+Example with NetCat (nc):
+root@74c387ea6043:/# nc -lp 45678 | nc -lp 45679 // here we route traffic from port 45678 via pipe to 45679
+
+Terminal 2
+$ nc localhost 45678
+
+Terminal 3
+$ nc localhost 45679
+
+Now type in T2, and it will send the output to T3.
+
+
+Volumes
+Share volume between host and container:
+1. mkdir example
+2. find the fully qualified path to example, by typing pwd
+3. $ docker run -ti -v /home/ubuntu/example:/shared-folder ubuntu:14.04 bash. // notice -v for volume. 
+																			  // here we add: host-path : path-inside-container
+4. create file inside the container's shared-folder
+5. stop/remove container
+6. observe that the file still is located in example folder.
+
+
+
+

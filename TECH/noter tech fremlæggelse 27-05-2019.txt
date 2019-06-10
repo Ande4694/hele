@@ -1,0 +1,151 @@
+AT: check multiplexing, cidr, subnet struktur, ipv4 struktur, have network map med, lav gerne flere slides som kan trækkes frem når jon stiller spørgsmål, primært fokus på netværk lag, rigeligt med noter på slides
+at have : papir og blyant med
+
+
+Hasan : osi applications layer
+
+open system interconnection
+applications lag, lag 5, bruges af bla. chrome, firefox
+applications lag snakker med transport lag
+bruger protocol : som er regler, er vigtigt at man kommunikere ens, aftale og fælles sprog over alle OS og browsers
+http: get, put, delete, post
+FTP, TCP, SMTP, UDP
+HTTP skal ha: req line, header line, cr/lf (blank linie)
+dns: domain name system
+dns - cache - isp - org/com/net - root
+Wireshark: dns query/response
+dns - queries - answers
+at have network map med
+
+
+Simon : osi transport lag
+får http fra application lag
+snakker med network lag, i form a ipv4 datagram
+håndtere forbildese mellem lient og server
+bruger to protocoler tcp & udp
+udp bruges typisk til ip telefoni
+dybde med tcp
+3 way handshake
+seq nr - ack nr ( hvad er jeg klar til at modtage)
+retransmission - timeout
+checksum (sikkerhed)
+flow control - modtager justere data den kan modtage, via sliding window, jo større jo mer kan der modtages af gangen, hvor meget kan modtager skrive til sin disk af gangen, hvis mod. har modtaget 200 og kan modtage op til 1200 er sliding window 1000, sliding window er dynamisk og bestemmes af modtager, ved ack respons
+congestion control, afgør hastighed via ack 2x op og ned
+checksum: er en hash af alle bytes som skal sendes, som skal matche det modtaget
+multiplexing ?????????????????????????????????
+Wireshark : 
+find tcp, source, destination 
+at have network map med
+
+
+
+tobias from : osi network lag
+får tcp fra transport lag
+snakker med data lag
+primær: forwarding & routing
+forwarding, sender videre til en bedre router via port
+routing, er at finde den bedste vej via routere
+sørger for at forbinde 2 computere verden over
+ipv4 (32 bit)
+ipv4 datagram
+forskellen fra 4 og 6 er mængden af bit
+header siger noget om version
+time to live, hvopr mange router hop skal den her leve
+checksum - fingerprint / hash
+data - f.eks. tcp segment
+protocoler : 
+dhcp - får at få en ip adresse  (broadcast 255.255.255.255 / 000.0.0.0) via udp
+(BGP OG RIP SKER HELE TIDEN, primært ISP routere)
+bgp - styrer autonomnous systems interne snak, hvilke routere bruger dette auto system via tcp 179
+rip - routere der deler routing tables
+djikstra
+
+skal checke cidr¨
+subnet struktur
+ip4 struktur
+
+
+
+gustav : osi data link lag
+snakker med network lag og physical lag
+håndetere data til det fysiske lag
+bruger WAN og LAN
+ethernet frame: dest adre (mac?)
+arp: broadcaster til hele netværket via ip4 for at mappe mac og ip, switch og husker via nic netværk interface card
+mac ligger på netværkskortet
+switch - er smart og kan styre porte og huske hvilken port der er forbundet til hvilken mac, via arp
+skulle ha snakket mere om switch
+
+wireshark :
+ethernetframe
+vælg whatever udp, tcp, dns
+ehternetframe:
+
+wifi: 
+
+cdma - csma
+cdma flere på en gang
+signal forstørres og formindskes
+
+csms
+en af gangen collision detection
+
+
+
+
+Felix : dev ops
+CI CD
+problemer fra før man fik CI/CD
+Hvorfor ventede man?? fordi det var manuelt
+færre fejl og konflikter, da man integrere oftere
+JAR fil indeholder en tomcat server
+test kører på ekstern server, hviklet frigør ens egen pc til videre udvikling
+test på seperate server
+jenkins tester også
+jenkins deployer også, fortæller docker at deploy
+
+
+
+
+liam : application lag
+snakker med transport
+data fra bruger, som app lag bearbejder og smider videre til transport lag
+består af http req og det får et http respo
+http er en protocol som definere hvordan man snakker
+
+wireshark:
+udp.port == 53
+
+fra cmd
+ns.lookup en.wikiuniversity.org
+protocol for at have en uniform måde at kommunikere på
+
+protocoler:
+http tcp
+smtp tcp (send)
+ftp  tcp
+pop3 tcp (modtag mail)
+
+primær http
+delete, put, sender info
+post sender data tilbage
+
+hvordan ved browseren om det er get eller post?
+browser beslutter selv, hvis det er formular laver den et post
+hvordan fungere dns?
+man forspørger i rækkefølge og ender i sidste ende ved en af de 13 root dns servere verden over
+
+
+
+tobias : transport lag
+før :app
+efter network
+intro: formål at transportere 
+protocoler tcp og udp
+tcp : connection oriented proto, reliable proto
+udp: connectionless proto
+
+MUTLIPLEXING : flere processer som sender noget over, samler i en transport, som efter følgende deler det op i fht port på modtagende process
+multiplex er samling
+demultiplexing deles ud
+

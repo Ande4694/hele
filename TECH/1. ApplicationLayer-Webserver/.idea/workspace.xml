@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58da896c-12ee-40ae-bf9e-a48fcbdffaaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BubbleSort/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/DijkstraController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/GraphController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/GraphResponseBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/GraphService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/java/com/example/demo/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Djikstra/src/main/resources/templates/dijkstra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer-Webserver.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ApplicationLayer-Webserver/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BubbleSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BubbleSort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/out/production/Decorator/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/out/production/Decorator/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/com/company/PizzaDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/com/company/PizzaDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Factory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Memento/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Memento/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MergeSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MergeSort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Singleton/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Singleton/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Singleton/src/com/company/SingeltonThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Singleton/src/com/company/SingeltonThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/Threads.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/Chat/Chatter1/ChatServer$ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/Chat/Chatter1/ChatServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/Chat/Chatter2/ChatClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/Cons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/Prod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/RunThis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/JonsBurgerJoint/Slider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris/Connector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/MainAttack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris$UPDATE_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/SlowLoris.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/SlowLoris2/Stats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/MainLidtSkrald.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/MainSync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/MainWaitNotify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/WhyWeNeedSynch/ThreadB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/join/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/out/production/Threads/com/company/join/Tun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/Chat/Chatter1/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/Chat/Chatter2/ChatClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/Cons.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/Prod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/RunThis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/JonsBurgerJoint/Slider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris/Connector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/MainAttack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/SlowLoris.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/SlowLoris2/Stats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/WhyWeNeedSynch/MainLidtSkrald.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/WhyWeNeedSynch/MainSync.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/WhyWeNeedSynch/MainWaitNotify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/join/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Threads/src/com/company/join/Tun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Webserver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counting sort" beforeDir="false" afterPath="$PROJECT_DIR$/../counting sort" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devops" beforeDir="false" afterPath="$PROJECT_DIR$/../devops" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flyweight" beforeDir="false" afterPath="$PROJECT_DIR$/../flyweight" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/MultiClientChat.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/ChatServer$ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/ChatServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/Client1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/Multi/Client2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatClientTo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/out/production/FUCKDETHER/toVejs/ChatServerTo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/single/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/single/Client1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatClientTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiClientChat/src/toVejs/ChatServerTo.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Handler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="20" />
+    <option name="width" value="1405" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560163363278" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3. Threads" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\knuds\OneDrive\Dokumenter\datamatiker\3 semester\Eksamen 2019\ApplicationLayer-Webserver" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="ApplicationLayer-Webserver" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58da896c-12ee-40ae-bf9e-a48fcbdffaaa" name="Default Changelist" comment="" />
+      <created>1558536478371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558536478371</updated>
+      <workItem from="1558536480101" duration="2659000" />
+      <workItem from="1558875057277" duration="279000" />
+      <workItem from="1558953922147" duration="673000" />
+      <workItem from="1559030865317" duration="1467000" />
+      <workItem from="1559990669590" duration="1398000" />
+      <workItem from="1560163016977" duration="929000" />
+      <workItem from="1560181573977" duration="1961000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9366000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936507" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Sequence" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Client.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/Server.java" />
+    <entry file="file://$PROJECT_DIR$/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

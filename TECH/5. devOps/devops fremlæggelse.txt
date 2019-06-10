@@ -1,0 +1,96 @@
+jenkins: er skrevet i java, kører multiplatform. - builder code, kører test,
+continuos integration: tests der bliver kørt på run server
+continuos delivery:
+
+
+github commit -> jenkings webhook, tester, builder -> docker builder sandbox image (os + app) som bliver kørt i en container (sandbox)
+
+jenkins er CI
+bruger maven til at builde jar ( hvis den består tests)
+jenkins kan ikke håndtere forskellige builds, 
+
+master / slave architectur
+jenkins server har adgang til master miljø
+jenkins kan herfra distribuere til jenkins slaver via tcp/ip for at balancere arbejdet
+det gør man kan kører mange forskelige miljø og test af gangen
+docker er en slave? ja
+jenkins siger til docker "build" i build steps
+
+
+DOCKER :
+tool for runnign dev in isolatyed miljæ
+en apps kører altid i samme miljø, ik noget pis 
+snadbox hvert projekt
+simplificering
+
+containers: bygger på serverens kernel og bruger det specifikke styk værktøj til at lave f.eks et ubunto, da det er bygget på samme linux kernel
+en container er et "running instance of a image", et snapshot af systemet på et givent tidspunkt
+image kører i container, et image har os, app, software til begge
+man bruger en dockerfile til at definere hvad et image er, i bund og grund en liste af trin
+
+evt en billed af dockerfile
+
+dockerfile -> image -> container 
+man kan bygge et image oven på et andet image
+
+man kan f.eks. have en container der kører tests og en til prod.
+
+hvad løser CI?
+flere udviklere, med flere versioner og tests. 
+alt bliver samlet intet virker
+CI hjælper til at pinpointe hvor en fejl ligger
+i stedet for at 7 udviklere samler deres code en gang om ugen f.eks. bliver det samlet løbende, og hvis der er fejl fremstår det med det samme
+integrate early and often
+så hver gang noget bliver pushet til f.eks github burde hele projektet blive bygget, og testet i modsætning til en gang om ugen
+men for at det giver mening skal det ske automatisk
+det fede er man kan overlade tests til en CI server og bare arbejde viddere, + man kan ikke glemme at teste
+build slaves bliver sat i gang af CI
+
+
+PP
+________________________________-
+
+DevOps
+Development operations
+
+Contious integration
+contiuos delivery
+
+CI
+jenkins bruger maven til at builde en jar
+Derfra kan den testes eller uddeles i form af master - slave relation
+dvs jenkins har adgang til source, som det kan builde
+derfra kan det uddele til slaves (docker ie)
+gøres for at blancere arbejdet, hvis arbejdet er meget forskelligt
+fordele? ens CI server kan ordne alt der hedder test og man kan fortsat abrjde
+CI betyder at man integrere konstant, og ikke blot 1 gang om ugen, hvilket gør at fejl fanges med det samme og kan rettes i realtid
+
+CD
+docker
+kan kører i isoleret miljøer
+builder hurtigt da det bruger mange af komponenterne i samme kernel
+man kan sandboxe, så en app altid kører i samme miljø (windows update f.eks)
+
+how so?
+et image bygges oven på andre images, vores er en blanding af ubuntu, jdk og vores app (jar)
+der tages et "snapshot" at miljøet nu og her
+et imnage kører i en container (sandbox, så man har opdelt)
+et image defineres af en "dockerfile" som i bund og grund er en liste trin
+
+dockerfile -> img -> container
+en container kan f.eks. bruges til test, og en til prod (slave i forholdet)
+
+hvad løser CI?
+flere udviklere, med flere versioner og tests. 
+alt bliver samlet intet virker
+CI hjælper til at pinpointe hvor en fejl ligger
+i stedet for at 7 udviklere samler deres code en gang om ugen f.eks. bliver det samlet løbende, og hvis der er fejl fremstår det med det samme
+integrate early and often
+så hver gang noget bliver pushet til f.eks github burde hele projektet blive bygget, og testet i modsætning til en gang om ugen
+men for at det giver mening skal det ske automatisk
+det fede er man kan overlade tests til en CI server og bare arbejde viddere, + man kan ikke glemme at teste
+build slaves bliver sat i gang af CI
+
+
+
+
